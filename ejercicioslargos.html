@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Ejercicios</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="row justify-content-center align-items-center g-2">
+        <div class="col">
+            <center><h4>Contador de Palabras Unicas</h4></center>
+            <textarea id="parrafo" name="parrafo" rows="4" cols="50" placeholder="Ingrese el Texto"></textarea>
+            <button id="contar" class="btn btn-success">Contar Palabras Únicas</button>
+            <button id="limpiar" class="btn btn-danger">Limpiar</button>
+         <div id="resultado">Total:</div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <h2>Reemplazar Vocales</h2>
+        <label for="cadena">Ingresa una cadena:</label>
+        <input type="text" id="cadena" name="cadena" required>
+            <br>
+            <br>
+            <button id="reemplazar" onclick="activo4()" class="btn btn-primary">Validar Contraseña</button>
+            <br>
+            <div id="resul"></div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <center><h2>Inversor de Cadena</h2></center>
+             <label for="cadena">Ingresa una cadena:</label>
+             <input type="text" id="cadena" required>
+             <br>
+             <br>
+             <button id="invertir" class="btn btn-primary" onclick="activo7()">Invertir</button>
+    
+             <div id="resal"></div>
+
+
+
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+
+             <h2>Longitud de Palabras</h2>
+    <label for="oracion">Ingresa una oración:</label>
+    <input type="text" id="oracion" required>
+    <br>
+    <button id="calcular" class="btn btn-primary" onclick="calcularLongitud()">Calcular</button>
+            <div id="tres"></div>
+             
+
+
+
+        </div>
+
+
+
+     <div class="col">
+        
+        <center><h2>Crear Contraseña</h2></center>
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" required>
+        <br>
+        <br>
+        <button id="validar" class="btn btn-primary">Validar Contraseña</button>
+    <div id="mensaje"></div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2>Búsqueda de Palabra Clave</h2>
+        <label for="cadena">Ingresa una cadena de texto:</label>
+        <input type="text" id="cadena" name="cadena" required>
+    
+        <label for="clave">Ingresa la palabra clave:</label>
+        <input type="text" id="clave" name="clave" required>
+        <br>
+    
+        <button id="buscar" class="btn btn-primary">Verificar</button>
+        <div id="resta"></div>
+
+
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2>Verificador de Frutas</h2>
+    <label for="fruta">Ingresa un nombre de fruta:</label>
+    <input type="text" id="fruta" required>
+    <button id="verificar" class="btn btn-primary" onclick="verificarFruta()">Verificar</button>
+    <div id="uno"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <h2>Duplicar Elementos de un Array</h2>
+    <p>Array original: [1, 2, 3, 4, 5]</p>
+    <br>
+    <button id="duplicar" class="btn btn-primary" onclick="duplicarArray()">Duplicar Elementos</button>
+    <div id="cuatro"></div>
+        
+    
+
+     </div>
+
+        <div class="col">
+
+            <center><h3>Verificador de Anagramas</h3></center>
+            <label for="cadena1">Ingresa la primera cadena:</label>
+            <input type="text" id="cadena1" name="cadena1" required>
+        
+            <label for="cadena2">Ingresa la segunda cadena:</label>
+            <input type="text" id="cadena2" name="cadena2" required>
+                 <br>
+                 <br>
+            <button id="verificar" class="btn btn-primary">Verificar Anagrama</button>
+            
+            <div id="res"></div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+           <center><h2>Contador de Palabras</h2></center> 
+        <label for="frase">Ingresa una frase:</label>
+        <input type="text" id="frase" required>
+        <button id="contar" class="btn btn-primary" onclick="activo6 ()">Contar</button>
+                
+        <div id="total"></div>
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <h2>Conversor de Mayúsculas y Minúsculas</h2>
+    <label for="cadena">Ingresa una cadena:</label>
+    <input type="text" id="cadena" required>
+    <br>
+    <button id="convertir" class="btn btn-primary" onclick="convertirCadena()">Convertir</button>
+    <br>
+   <div id="dos"></div>
+
+
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+
+   <h2>Conversor de Mayúsculas y Minúsculas</h2>
+    <p>Lista original de palabras: ["Hola", "Mundo", "Programación"]</p>
+    <br>
+    <button id="convertir" class="btn btn-primary" onclick="convertirPalabras()">Convertir Palabras</button>
+          <div id="six"></div>
+
+    </div>
+
+    <script src="operacionesejercicios.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
